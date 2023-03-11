@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header flex">
+        <div class="left-header flex">
+          <div class="hamburger-menu">
+            <img src="images/icon-menu.svg" alt="open menu" class="open-menu" />
+            <img
+              src="images/icon-close.svg"
+              alt="close menu"
+              class="close-menu"
+            />
+          </div>
+          <div class="logo">
+            <a href="#"><img src="images/logo.svg" alt="company logo" /></a>
+          </div>
+          <nav class="nav-menu">
+            <ul class="nav-items flex">
+              <li class="nav-item"><a href="#">Collections</a></li>
+              <li class="nav-item"><a href="#">Men</a></li>
+              <li class="nav-item"><a href="#">Women</a></li>
+              <li class="nav-item"><a href="#">About</a></li>
+              <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right-header flex">
+          <div class="shop-cart">
+            <img src="images/icon-cart.svg" alt="shoping cart" />
+            <span class="basket-filled"></span>
+            <div class="info-cart">
+              <p class="info-cart-text">Cart</p>
+              <div class="info-cart__content"></div>
+            </div>
+          </div>
+          <div class="avatar">
+            <img src="images/image-avatar.png" alt="Account photo" />
+          </div>
+        </div>
+      </header>
+      <main class="main-content">
+        <section class="images">
+          <div class="hero-images">
+            <img
+              src="images/image-product-1.jpg"
+              alt="Sneakers photo"
+              class="hero-img active"
+            />
+            <img
+              src="images/image-product-2.jpg"
+              alt="Sneakers photo"
+              class="hero-img"
+            />
+            <img
+              src="images/image-product-3.jpg"
+              alt="Sneakers photo"
+              class="hero-img"
+            />
+            <img
+              src="images/image-product-4.jpg"
+              alt="Sneakers photo"
+              class="hero-img"
+            />
+            <button class="mobile-btn prev">
+              <img src="images/icon-previous.svg" alt="Prevoius button" />
+            </button>
+            <button class="mobile-btn next">
+              <img src="images/icon-next.svg" alt="Next button" />
+            </button>
+          </div>
+          <div class="small-images">
+            <ul class="small-images-list flex">
+              <li class="small-img active-thumb">
+                <img
+                  src="images/image-product-1-thumbnail.jpg"
+                  alt="Sneakers photo"
+                />
+              </li>
+              <li class="small-img">
+                <img src="images/image-product-2-thumbnail.jpg" alt="" />
+              </li>
+              <li class="small-img">
+                <img src="images/image-product-3-thumbnail.jpg" alt="" />
+              </li>
+              <li class="small-img">
+                <img src="images/image-product-4-thumbnail.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="product-description">
+          <h4 class="text-accent">sneaker company</h4>
+          <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+          <p class="product-about">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price flex">
+            <p class="current-price">
+              $125.00 <span class="text-accent">50%</span>
+            </p>
+            <p class="product-old-price"><del>$250</del></p>
+          </div>
+          <div class="product-btns">
+            <div class="product-quantity flex">
+              <button class="btn btn-decrement">
+                <img src="images/icon-minus.svg" alt="minus button" />
+              </button>
+              <span class="quantity-value">0</span>
+              <button class="btn btn-increment">
+                <img src="images/icon-plus.svg" alt="plus button" />
+              </button>
+            </div>
+            <button type="submit" class="cart-btn flex">
+              <img src="images/icon-cart-white.svg" alt="icon cart" />Add to
+              cart
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="modal-full-width hidden"></div>
+    <div class="modal-img hidden">
+      <button class="modal-btn prev">
+        <img src="images/icon-previous.svg" alt="Prevoius button" />
+      </button>
+      <button class="modal-btn next">
+        <img src="images/icon-next.svg" alt="Next button" />
+      </button>
+      <img src="images/icon-close-orange.svg" alt="close" class="close-modal" />
+      <img
+        src="images/image-product-1.jpg"
+        alt="Sneakers photo"
+        class="hero-img active"
+      />
+      <div class="small-images">
+        <ul class="small-images-list flex">
+          <li class="small-img active-thumb">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              alt="Sneakers photo"
+            />
+          </li>
+          <li class="small-img">
+            <img src="images/image-product-2-thumbnail.jpg" alt="" />
+          </li>
+          <li class="small-img">
+            <img src="images/image-product-3-thumbnail.jpg" alt="" />
+          </li>
+          <li class="small-img">
+            <img src="images/image-product-4-thumbnail.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

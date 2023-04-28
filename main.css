@@ -147,7 +147,6 @@ a {
   top: 0;
   left: 0;
   z-index: 99;
-  display: none;
 }
 .nav-items {
   height: 60%;
@@ -274,16 +273,21 @@ a {
 .small-images {
   display: none;
 }
+.display {
+  display: none;
+}
 
 /* Desktop layout */
 
 @media (min-width: 800px) {
+  .display {
+    display: block;
+  }
   .container {
     max-width: 1100px;
     display: grid;
     margin-inline: auto;
     grid-template-columns: 1fr;
-
     position: relative;
     gap: 2rem;
   }
@@ -321,6 +325,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
     margin-top: 2rem;
+    padding-left: 1rem;
   }
 
   .images {
